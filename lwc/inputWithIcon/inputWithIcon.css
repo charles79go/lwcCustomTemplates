@@ -1,0 +1,52 @@
+.container {
+    position: relative;
+    margin: 20px;
+}
+
+.inputField {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    outline: none;
+    border: 2px solid #c8c8c8;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding-left: 30px; /* Space for icon */
+}
+
+.label {
+    position: absolute;
+    top: 8px;
+    left: 25px;
+    font-size: 16px;
+    color: rgba(58, 58, 58, 1);
+    padding: 0 8px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.inputField:focus + .label,
+.inputField:not(:placeholder-shown) + .label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #ffad16;
+    background-color: #f5f5f5;
+}
+
+.inputField:focus,
+.inputField:not(:placeholder-shown) {
+    border-color: #ffad16;
+    background-color: #f5f5f5;
+}
+
+
+.icon {
+    height: 16px;
+    width: 16px;
+    top: 12px;
+    left: 8px;
+    position: absolute;
+}
+

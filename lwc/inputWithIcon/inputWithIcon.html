@@ -1,0 +1,17 @@
+<template>
+    <div class="container">
+        <lightning-icon 
+            icon-name={icon} 
+            class="icon"
+            size="x-small"
+            ></lightning-icon>
+        <input 
+            class="inputField" 
+            type={type}
+            value={inputValue}
+            onkeyup={handleInputChange}
+            placeholder=" "
+            >
+        <label for="inputField" class="label">{label}</label>
+    </div>
+</template>
