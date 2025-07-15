@@ -1,3 +1,10 @@
+/**
+ * Use as   <c-circle-checkbox label="Circle checkbox"
+ *              value={circleCheckboxValue}
+ *              onchange={handleCircleCheckboxChange}>
+ *          </c-circle-checkbox>
+ */
+
 import { LightningElement, api } from 'lwc';
 
 export default class CircleCheckbox extends LightningElement {
