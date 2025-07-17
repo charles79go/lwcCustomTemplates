@@ -1,0 +1,18 @@
+<template>
+    <div class="container">
+        <div class="groupLabel">{label}</div>
+        <template for:each={options} for:item="radio">
+            <div key={radio.value}>
+                <label class="itemLabelContainer" >
+                    <input 
+                        type="radio"
+                        name={name}
+                        value={radio.value}
+                        onchange={handleInputChange}>
+                    <img if:true={radio.image} src={radio.image} class="radioImage">
+                    <span>{radio.label}</span>
+                </label>
+            </div>
+        </template>
+    </div>
+</template>
