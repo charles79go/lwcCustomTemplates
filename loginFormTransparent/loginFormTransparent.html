@@ -1,0 +1,38 @@
+<template>
+    <div class="form">
+
+        <div class="companyName">
+            <h2>Company Name</h2>
+        </div>
+
+        <div class="inputContainer">
+            <img src={userIcon} />
+            <input type="text" value={userName} onkeyup={handleUserName} placeholder="Username" /> 
+        </div>
+
+        <div class="inputContainer">
+            <img src={passwordIcon} />
+            <input type="password" value={password} onkeyup={handlePassword} placeholder="Password" /> 
+        </div>
+
+        <div class="optionsRow">
+            <span class="forgot" onclick={handleForgotPassword}>Forgot password?</span>
+        </div>
+
+        <button>Login</button>
+
+        <div class="signUpRow">
+            <p>Don't have an account? <span class="signUp" onclick={handleSignUp}>Sign Up</span></p>
+        </div>
+
+        <div class="socialTextRow">
+            <p>Or login with</p>
+        </div>
+
+        <div class="socialContainer">
+            <img src={facebook} onclick={handleFacebookLogin} class="socialIcon" alt="Facebook" />
+            <img src={google} onclick={handleGoogleLogin} class="socialIcon" alt="Google" />
+            <img src={linkedin} onclick={handleLinkedInLogin} class="socialIcon" alt="LinkedIn" />
+        </div>
+    </div>
+</template>

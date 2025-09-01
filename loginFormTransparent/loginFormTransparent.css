@@ -1,0 +1,107 @@
+.form {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background: transparent;
+    border: 1px solid #c8c8c8;
+    color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.companyName {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.inputContainer {
+    margin: 10px;
+    position: relative;
+}
+
+.inputContainer img {
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    height: 16px;
+    width: 16px;
+}
+
+.inputContainer input {
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffffff;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+}
+
+.inputContainer input::placeholder {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+button {
+    flex-grow: 1;
+    margin: 10px;
+    outline: none;
+    border: 1px solid #ffad16;
+    background-color: #ffad16;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.optionsRow, 
+.signUpRow,
+.socialTextRow {
+    margin: 10px;
+}
+
+.optionsRow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signUpRow,
+.socialTextRow {
+    display: flex;
+    justify-content: center;
+}
+
+.socialTextRow {
+    padding-top: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #c8c8c8;
+}
+
+.forgot, 
+.signUp {
+    color: #ffad16;
+    cursor: pointer;
+}
+
+.socialContainer {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialIcon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    cursor: pointer;
+}
